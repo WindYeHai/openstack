@@ -8,7 +8,6 @@ import paramiko
 import bottle
 import libvirt
 import json
-import gevent
 
 DEFAULT_HOST = '0.0.0.0'
 DEFAULT_PORT = '6666'
@@ -180,4 +179,4 @@ def linkAccess(accessfilename,testfilename,vport):
 			t = t + 1
 	
 if __name__=='__main__':
-	run('0.0.0.0','6666',server='gevent')
+	run('0.0.0.0','6666')
